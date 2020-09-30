@@ -1,1 +1,1 @@
-pytest -s -v -m "sanity" --html=./Reports/sanity_report.html testCases/
+C:\Users\shash\.virtualenvs\nopCommerceApp\Scripts\activate.bat && pytest -s -v -m "sanity" --html=./Reports/sanity_report.html testCases/
