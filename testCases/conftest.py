@@ -12,8 +12,10 @@ def setup(browser):
     elif browser == 'firefox':
         driver = webdriver.Firefox()
     else:
+        options = webdriver.ChromeOptions()
+        options.add_argument("--headless")
         driver = webdriver.Chrome(
-            executable_path="C:/Users/shash/Documents/drivers/chromedriver.exe")
+            executable_path="C:/Users/shash/Documents/drivers/chromedriver.exe", options=options)
     return driver
 
 
