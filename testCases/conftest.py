@@ -6,16 +6,16 @@ import pytest
 def setup(browser):
     if browser == "chrome":
         options = webdriver.ChromeOptions()
-        options.add_argument("--headless")
+        # options.add_argument("--headless")
         driver = webdriver.Chrome(
-            executable_path="C:/Users/shash/Documents/drivers/chromedriver.exe", options=options)
+            executable_path="C:/Users/shashank.basant/Downloads/chromedriver_win32/chromedriver.exe", options=options)
     elif browser == 'firefox':
         driver = webdriver.Firefox()
     else:
         options = webdriver.ChromeOptions()
-        options.add_argument("--headless")
+        # options.add_argument("--headless")
         driver = webdriver.Chrome(
-            executable_path="C:/Users/shash/Documents/drivers/chromedriver.exe", options=options)
+            executable_path="C:/Users/shashank.basant/Downloads/chromedriver_win32/chromedriver.exe", options=options)
     return driver
 
 
